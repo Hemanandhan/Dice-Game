@@ -4,10 +4,13 @@ var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
 var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
 
 function myFunction() {
-  
+  var randomNumber1 = Math.floor(Math.random() * 6) + 1; //1-6
+
+var randomDiceImage = "dice" + randomNumber1 + ".png"; //dice1.png - dice6.png
+
   var randomImageSource = "images/" + randomDiceImage; //images/dice1.png - images/dice6.png
 
-var image1 = document.querySelectorAll("img")[0];
+document.querySelectorAll("img")[0].setAttribute("src", randomImageSource1);
 
 image1.setAttribute("src", randomImageSource);
 
